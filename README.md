@@ -2,6 +2,9 @@ A repro of the XUnit Log4Net bug with aws-sdk-net
 
 Environment
 -------------------
+Microsoft Visual Studio Professional 2017  
+Version 15.0.26228.9 D15RTWSVC
+
 ```dos
 C:\src\aws-sdk-net-log4net-bug>dotnet --info
 .NET Command Line Tools (1.0.0)
@@ -17,11 +20,8 @@ Runtime Environment:
  RID:         win10-x64
  Base Path:   C:\Program Files\dotnet\sdk\1.0.0
 ```
-Installed runtimes:
-- 1.0.1
-- 1.0.4
-- 1.1.0
-- 1.1.1
+
+Targeting Microsoft.NETCore.App 1.0.4
 
 Exception
 ------------------
