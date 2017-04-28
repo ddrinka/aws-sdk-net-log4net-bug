@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{3C314EE1-BA96-4795-8CF5-E5895A27D396}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Log4NetBug.Test", "test\Log4NetBug.Test\Log4NetBug.Test.csproj", "{8C04106A-583F-4B56-9711-4782123FA576}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{57FA158A-75D8-49A8-8024-61A4A682BD82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Log4NetBug", "src\Log4NetBug\Log4NetBug.csproj", "{C1DBDCEF-471A-4B15-BFC5-DC01216E374C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C04106A-583F-4B56-9711-4782123FA576}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C04106A-583F-4B56-9711-4782123FA576}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C04106A-583F-4B56-9711-4782123FA576}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C04106A-583F-4B56-9711-4782123FA576}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1DBDCEF-471A-4B15-BFC5-DC01216E374C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1DBDCEF-471A-4B15-BFC5-DC01216E374C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1DBDCEF-471A-4B15-BFC5-DC01216E374C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1DBDCEF-471A-4B15-BFC5-DC01216E374C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8C04106A-583F-4B56-9711-4782123FA576} = {3C314EE1-BA96-4795-8CF5-E5895A27D396}
+		{C1DBDCEF-471A-4B15-BFC5-DC01216E374C} = {57FA158A-75D8-49A8-8024-61A4A682BD82}
+	EndGlobalSection
+EndGlobal
