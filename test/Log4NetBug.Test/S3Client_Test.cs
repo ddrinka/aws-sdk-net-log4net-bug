@@ -6,8 +6,8 @@ namespace Log4NetBug
 {
 	public class S3Client_Test
 	{
-		const string ACCESS_KEY_ID = "AKIAI6F4JAQVLPRAOPNA";                                //Note, these are real credentials with access to a temporary S3 bucket
-		const string SECRET_ACCESS_KEY = "QYdblrEH1WflUXzbC2NOskYd6FEPUEm5b3BbwKQD";
+		const string ACCESS_KEY_ID = "ACCESS_KEY_ID";
+		const string SECRET_ACCESS_KEY = "SECRET_ACCESS_KEY";
 		const string BUCKET_NAME = "public.log4netbug";
 		const string OBJECT_NAME = "success.txt";
 
