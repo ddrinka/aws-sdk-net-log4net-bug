@@ -1,22 +1,30 @@
-﻿using Amazon;
+﻿using System.IO;
+using System.Threading.Tasks;
+using Amazon;
+using Amazon.CognitoIdentity;
+using Amazon.Runtime;
 using Amazon.S3;
 using Amazon.S3.Model;
-using System;
-using System.IO;
-using System.Threading.Tasks;
 
 namespace Log4NetBug
 {
-    public static class S3Client
+	public static class S3Client
     {
-		public static AmazonS3Client CreateS3Client(string accessKeyId, string secretAccessKey)
+		public static AWSCredentials GetCredentials(string identityPoolId)
+		{
+			var credentials = new CognitoAWSCredentials(identityPoolId, RegionEndpoint.USEast1);
+		
+			return credentials;
+		}
+
+		public static AmazonS3Client CreateS3Client(AWSCredentials credentials)
 		{
 			var config = new AmazonS3Config
 			{
 				DisableLogging = true,
 				RegionEndpoint = RegionEndpoint.USEast1
 			};
-			return new AmazonS3Client(accessKeyId, secretAccessKey, config);
+			return new AmazonS3Client(credentials, config);
 		}
 
 		public async static Task ListBucketObjects(AmazonS3Client client, string bucketName)
